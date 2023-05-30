@@ -1,0 +1,70 @@
+body{
+    background-color: azure;
+    
+}
+
+
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    height: 100vh;
+
+}
+
+main .container .title{
+    margin-top: 120px;
+}
+
+main .container .title .underline{
+    content: "";
+    margin: auto;
+    height: 4px;
+    width: 80px;
+    background-color: blueviolet;
+}
+
+main .container .card{
+    margin: auto;
+    padding: 20px;
+    width: 600px;
+    margin-bottom: 100px;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.215);
+    
+}
+
+main .container .img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+main .container .card .info h5{
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+main .container .card .info h6{
+    color: rgb(106, 106, 238);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+main .container .card .buttons > button{
+    border: none;
+    background: none;
+}
+
+main .container .card .buttons .surprise-me button{
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+

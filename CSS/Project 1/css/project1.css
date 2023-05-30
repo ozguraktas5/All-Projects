@@ -1,0 +1,102 @@
+:root{
+    --color1: rgb(70, 189, 244);
+    --color2: #FBB040;
+    --color3: rgb(52, 52, 52);
+}
+
+body{
+    font-family: 'Nunito';
+    margin: 0;
+}
+
+section.topbar{
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+}
+
+section.menubar ul,
+section.topbar ul{
+    list-style-type: none;
+    margin:0; padding: 0;
+    display: flex;
+    gap: 10px;
+
+}
+
+section.topbar ul a{
+    color: var(--color1);
+    text-decoration: none;
+}
+
+section.menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.917);
+    z-index: 1;
+}
+
+section.menubar img{
+    width: 150px;
+    height: auto;
+}
+
+section.menubar ul a{
+    text-decoration: none;
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+section.menubar ul a:hover{
+    background-color: var(--color1);
+}
+
+section.slider{
+    background-image: url(../img/chatgpt-fails.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    position: relative;
+}
+
+section.slider h2{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+    text-shadow: 0 0 10px var(--color3);
+
+}
+
+main p{
+    padding: 10px;
+}
+
+.gpt-logo img{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

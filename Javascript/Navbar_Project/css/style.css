@@ -1,0 +1,55 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-center .nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 45px;
+    padding: 10px 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.115);
+
+}
+
+nav .nav-center .nav-header .logo img{
+    width: 50px;
+    height: auto;
+    
+}
+
+nav .nav-center .nav-header .bars{
+    border: none;
+    background: none;
+}
+
+nav .nav-center .nav-header .bars i{
+    font-size: 1.5rem;
+    
+}
+
+nav .nav-center .show-links{
+    background-color: white;
+    height: 140px;
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+
+nav .nav-center .show-links > li{
+    
+    padding: 8px 0;
+
+}
+
+nav .nav-center .show-links li > a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.588);
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+

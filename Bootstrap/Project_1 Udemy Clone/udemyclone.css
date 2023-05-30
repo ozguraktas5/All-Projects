@@ -1,0 +1,503 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ALERT */
+
+.udemy-alert{
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    background-color: #ECEB98 !important;
+    text-align: center;
+}
+
+/* NAVBAR */
+
+nav.navbar{
+    
+    background-color: #fff !important;
+    box-shadow: 2px 2px 10px lightgray;
+    position:static;
+    z-index: 1;
+}
+
+.navbar .udemy-navbar{
+    background-color: #fff;
+    height: 2.5rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+}
+
+@media screen and (min-width:1200px) {
+    .navbar .udemy-navbar{
+        height: 3.2rem;
+        
+        
+    }
+}
+
+
+
+.navbar .udemy-navbar button.navbar-toggler{
+    border:none;
+    font-size: 0.9rem;
+    
+}
+
+@media screen and (min-width:1200px) {
+    .navbar .udemy-navbar button.navbar-toggler{
+        display: none;
+    }
+}
+
+.navbar .udemy-navbar button.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar .udemy-navbar button.navbar-search,
+.navbar .udemy-navbar button.navbar-shopping{
+    border: none;
+    background: none;
+    
+}
+
+@media screen and (min-width:1200px) {
+    .navbar .udemy-navbar button.navbar-search,
+    .navbar .udemy-navbar button.navbar-shopping{
+        display: none;
+    }
+
+    .navbar .udemy-navbar button.navbar-shopping-lg{
+        border: none;
+        background: none;
+        
+    }
+}
+
+
+
+.navbar .udemy-navbar img{
+    width: 75px;
+    height: auto;
+    margin: auto;
+}
+
+@media screen and (min-width:1200px) {
+    .navbar .udemy-navbar img{
+        width: 90px;
+        height: auto;
+        margin: 0;
+    }
+}
+
+.navbar .udemy-navbar .offcanvas .offcanvas-header{
+    padding-top: 0.8rem;
+    padding-bottom: 0;
+}
+
+.navbar .udemy-navbar .offcanvas .offcanvas-header .login-signup{
+    list-style-type: none;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .udemy-navbar .offcanvas .offcanvas-header .login-signup a{
+    color: #5624d0;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.navbar .udemy-navbar .offcanvas .offcanvas-body h2{
+    border-top: 1px solid #d1d7dc;
+    font-size: 0.9rem;
+    padding: 0.7rem 0;
+    margin-bottom: 0;
+    
+}
+
+.navbar .udemy-navbar .offcanvas .offcanvas-body .mobile-ul-list{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .udemy-navbar .offcanvas .offcanvas-body .mobile-ul-list .nav-item{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    line-height: 35px;
+    font-size: 0.9rem;
+}
+
+.navbar .udemy-navbar .offcanvas .offcanvas-body .mobile-language{
+    margin-top: 0.8rem;
+}
+
+.navbar .udemy-navbar .offcanvas .offcanvas-body .mobile-language button{
+    border-radius: 0;
+    padding: 0.3rem 1.3rem;
+    min-width: 9rem;
+    
+
+}
+
+.navbar .udemy-navbar .offcanvas .offcanvas-body .mobile-language button span{
+    font-size: 0.9rem;
+}
+
+.navbar .udemy-navbar .dropdown{
+    display: none;
+}
+
+@media screen and (min-width:1200px) {
+    .navbar .udemy-navbar .dropdown{
+        display: flex;
+    }
+    
+}
+
+.navbar .udemy-navbar .navbar-shopping-lg{
+    display: none;
+}
+
+@media screen and (min-width:1200px){
+    .navbar .udemy-navbar .navbar-shopping-lg{
+        display: flex;
+    }
+}
+
+.navbar .udemy-navbar .large-btn,
+.navbar .udemy-navbar .large-btn-dark{
+    display: none;
+}
+
+@media screen and (min-width:1200px){
+    .navbar .udemy-navbar .large-btn{
+        display: flex;
+        border-radius: 0;
+    }
+
+    .navbar .udemy-navbar .large-btn-dark{
+        display: flex;
+        border-radius: 0;
+        background-color: black;
+        color: white;
+    }
+}
+
+
+
+
+
+.navbar .udemy-navbar .dropdown > button{
+    border: none;
+    font-size: 0.9rem;
+    
+}
+
+.navbar .udemy-navbar .dropdown > button:hover{
+    background: none;
+    color: #5624d0;
+}
+
+.navbar .udemy-navbar .dropdown .dropdown-menu{
+    margin-top: 20px;
+    padding: 1.2rem;
+    line-height: 2.5rem;
+    width: 275px;
+    border-radius: 0;
+    box-shadow: 2px 2px 10px lightgray;
+}
+
+.navbar .udemy-navbar .dropdown .dropdown-menu .nav-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .udemy-navbar .input-group{
+   display: none;
+   width: 300px;
+}
+
+@media screen and (min-width:1200px) {
+    .navbar .udemy-navbar .input-group{
+        display: flex;
+    }
+}
+
+
+.navbar .udemy-navbar .input-group .input-group-text{
+    background-color: white;
+    border-color: black;
+    cursor: pointer;
+}
+
+.navbar .udemy-navbar .input-group .form-control{
+    border-left:none;
+    border-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+}
+
+/* MAIN */
+
+main{
+    padding: 0 20px;
+}
+
+.udemy-billboard{
+    padding: 0 !important;
+}
+
+.udemy-billboard .udemy-img{
+    z-index: 0;
+    position: relative;
+    margin-top: 5px;
+    box-shadow: 2px 2px 10px lightgray;
+    max-width: 100%;
+    height: auto;
+}
+
+.udemy-billboard .content-box-billboard{
+    display: none;
+    
+}
+
+@media screen and (min-width:700px){
+    .udemy-billboard .content-box-billboard{
+        display: block;
+        position: absolute;
+    }
+}
+
+.udemy-billboard2{
+    padding: 20px 30px;
+    
+}
+
+.udemy-billboard2 h1{
+    font-size: 1.8rem;
+}
+
+.udemy-billboard2 .input-group{
+    margin-top: 50px;
+    border: 1px solid black;
+    
+    
+}
+
+.udemy-billboard2 .input-group-text{
+    border-radius: 0;
+    background: none;
+    border-left: none;
+}
+
+.udemy-component-margin{
+    margin-top: 15px;
+}
+
+.udemy-component-margin p{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.udemy-u50-tabs{
+    margin-top: 30px;
+}
+
+.udemy-u50-tabs .udemy-skills-tab .udemy-headshot .card{
+    border-radius: 0;
+}
+
+.udemy-u50-tabs .udemy-skills-tab .udemy-headshot .card .card-header{
+    background: none;
+    border: none;
+    padding: 20px;
+}
+
+.udemy-u50-tabs .udemy-skills-tab .udemy-headshot .card .card-body{
+    padding: 20px;
+}
+
+.udemy-u50-tabs .udemy-skills-tab .udemy-headshot .card .card-header .nav-tabs .nav-item .nav-link{
+    border: none;
+    color: rgb(144, 135, 135);
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+
+.udemy-u50-tabs .udemy-skills-tab .udemy-headshot .card .card-header .nav-tabs .nav-item .nav-link:hover{
+    color: black;
+}
+
+.udemy-u50-tabs .udemy-skills-tab .udemy-headshot .card .card-body .tab-pane button{
+    border-radius: 0;
+    margin-top: 30px;
+}
+
+.udemy-section-component-margin{
+    margin-top: 30px;
+}
+
+.udemy-section-component-margin .udemy-top-categories{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.udemy-section-component-margin .udemy-top-categories > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.udemy-section-component-margin .udemy-top-categories > div > img{
+    max-width: 200px;
+}
+
+.udemy-section-component-margin .udemy-top-categories > div > span{
+    font-weight: 700;
+}
+
+.udemy-section-trending-topics{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 6.4rem 2.4rem;
+    margin-top: 40px;
+    background-color: #F8F9FB;
+    
+
+}
+
+
+
+.udemy-section-trending-topics h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.udemy-section-trending-topics .trending-topics > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.udemy-section-trending-topics .trending-topics--topic a{
+    color: #5624D0;
+    font-weight: 700;
+}
+
+.udemy-section-trending-topics .trending-topics--topic > div:last-child{
+    font-size: 0.8rem;
+}
+
+.udemy-section-trending-topics .trending-topics{
+    display: flex;
+    gap: 10px;
+}
+
+.udemy-section-trending-topics .trending-topics > div > h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+
+.udemy-section-trending-topics .trending-topics-btn button{
+    margin-top: 25px;
+    border-radius: 0;
+    font-weight: 700;
+}
+
+.udemy-section-non-student .non-student-cta .non-student-cta-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.udemy-section-non-student .non-student-cta .non-student-cta-wrapper img{
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+.udemy-section-non-student .non-student-cta .non-student-cta-wrapper > div{
+    margin-top: 35px;
+    text-align: center;
+    
+}
+
+.udemy-section-non-student .non-student-cta .non-student-cta-wrapper > div h3{
+    font-size: 2rem;
+}
+
+.udemy-section-non-student .non-student-cta .non-student-cta-wrapper > div .non-student-cta-content{
+    font-size: 1.1rem;
+}
+
+.udemy-section-non-student .non-student-cta .non-student-cta-wrapper > div button{
+    border-radius: 0;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+}
+
+.udemy-section-non-student .non-student-cta .non-student-cta-wrapper > div button span{
+    font-weight: bold;
+}
+
+.udemy-logged-out{
+    background-color: #F8F9FB;
+    padding: 0.5rem 1rem;
+    margin-top: 60px;
+}
+
+.udemy-logged-out .partners-banner .partners-banner-wrapper{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.udemy-logged-out .partners-banner .partners-banner-wrapper h2{
+    font-size: 1.7rem;
+}
+
+.udemy-logged-out .partners-banner .partners-banner-wrapper p{
+    font-size: 1rem;
+}
+
+.udemy-logged-out .partners-banner .partners-banner-wrapper .partner-logos div:first-child{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+    
+}
+
+.udemy-logged-out .partners-banner .partners-banner-wrapper .partner-logos div:last-child{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+    
+}
+
+
+
+.udemy-section-non-student .non-student-cta .non-student-cta-wrapper > div img{
+   width: 200px;
+   height: auto;
+}
+
+
+
