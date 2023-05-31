@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
 body{
+    font-family: 'Roboto';
     background-color: aliceblue;
     margin: 0;
     padding: 0;
@@ -21,9 +24,14 @@ nav .nav-center .nav-header .logo img{
     
 }
 
+nav .nav-center .nav-header .large-links{
+    display: none;
+}
+
 nav .nav-center .nav-header .bars{
     border: none;
     background: none;
+    
 }
 
 nav .nav-center .nav-header .bars i{
@@ -31,25 +39,82 @@ nav .nav-center .nav-header .bars i{
     
 }
 
-nav .nav-center .show-links{
+nav .nav-center .nav-header .social-links{
+    display: none;
+}
+
+nav .nav-center .links{
     background-color: white;
-    height: 140px;
+    height: 0;
+    overflow: hidden;
     list-style: none;
     margin: 0;
-    padding: 15px;
 }
 
-nav .nav-center .show-links > li{
+nav .nav-center .show-links{
+    padding: 0;
+    height: 10rem;
     
-    padding: 8px 0;
-
 }
 
-nav .nav-center .show-links li > a{
+nav .nav-center .links > li:hover{
+    background-color: rgb(248, 255, 47);
+}
+
+nav .nav-center .links li > a{
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.588);
+    display: block;
+    color: rgb(148, 38, 38);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 10px 18px;
+    letter-spacing: 2px;
 
 }
+
+@media screen and (min-width: 800px){
+    nav .nav-center .nav-header .bars{
+        display: none;
+    }
+
+    nav .nav-center .nav-header .social-links{
+        display: inline-flex;
+        gap: 20px;
+        list-style: none;
+             
+    }
+
+    nav .nav-center .nav-header .social-links > li > a{
+        color: rgb(226, 142, 142);
+        font-size: 1.2rem;
+    }
+
+    nav .nav-center .nav-header .social-links > li > a:hover{
+        color: red;
+    }
+
+    nav .nav-center .show-links{
+        display: none;
+    }
+
+    nav .nav-center .nav-header .large-links{
+        display: inline-flex;
+        gap: 25px;
+        list-style: none;
+    }
+
+    nav .nav-center .nav-header .large-links > li a{
+        text-decoration: none;
+        color: rgb(207, 120, 120);
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    nav .nav-center .nav-header .large-links > li a:hover{
+        color: black;
+    }
+
+}
+    
+
 

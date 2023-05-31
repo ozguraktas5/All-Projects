@@ -1,8 +1,6 @@
-const links = document.querySelector(".show-links")
+const links = document.querySelector(".links")
 const barButton = document.querySelector(".bars");
-const linksLi = document.getElementsByTagName(".show-links li");
-
 
 barButton.addEventListener("click", () => {
-    
+    links.classList.toggle("show-links");
 });
