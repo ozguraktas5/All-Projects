@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(230, 209, 250);
+  font-family: "Roboto";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 4rem;
+}
+
+.card {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 5px 5px 10px rgb(153, 151, 151);
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.card .card-up {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .card-up h3 {
+  color: rgb(65, 63, 63);
+  letter-spacing: 3px;
+}
+
+.card .card-up .click {
+  padding: 2px 3px 0 3px;
+  background: none;
+  border: 1px solid rgb(192, 140, 240);
+  font-size: 1rem;
+  color: rgb(192, 140, 240);
+  transition: transform 0.5s;
+}
+
+.card .card-up .click:hover {
+  transform: rotate(90deg);
+}
+
+.card .card-up .click .click-plus{
+  display: block;
+}
+
+.card .card-up .click .click-minus{
+  display: none;
+}
+
+.card .card-up .click .click-plus .none{
+  display: none;
+}
+
+.card .card-up .click .click-minus .show{
+  display: block;
+}
+
+.card .card-down {
+  display: none;
+  border-top: 1px solid lightgray;
+  text-align: justify;
+}
+
+.card .card-down .show{
+  display:block;
+  
+}
+
+
