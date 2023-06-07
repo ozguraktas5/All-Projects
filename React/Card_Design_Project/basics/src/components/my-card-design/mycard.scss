@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap");
+
+#root{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.profile-card{
+    font-family: "Poppins", sans-serif;
+    border: 3px solid lightgray;
+    border-radius: 1rem;
+    width: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    
+
+    .header{
+        
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        
+    }
+
+    .content{
+        text-align: center;
+        
+        z-index: 0;
+    
+        .rating {
+            margin-top: 10px;
+        }
+
+        .star {
+        cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        .filled {
+            color: orange;
+        }
+
+        .title h3{
+            margin: 0.5rem 0;
+        }
+
+        .price{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .price p:first-child{
+            text-decoration: line-through;
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: gray;
+        }
+        .price p{
+            font-weight: 700;
+            margin: 0.5rem 0 1rem 0;
+            font-size: 1.2rem;
+            color: rgb(159, 63, 228);
+        
+        }
+
+        .discount{
+            position: absolute;
+            padding: 5px;
+            border-radius: 10px;
+            color: aliceblue;
+            top: 10px;
+            left: 10px;
+            background-color: rgb(159, 63, 228);
+        }
+    }
+}
