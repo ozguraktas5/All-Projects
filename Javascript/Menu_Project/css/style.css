@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(248, 231, 210);
+  margin: 0;
+  padding: 0;
+}
+
+.container h3 {
+  text-align: center;
+  padding: 4rem 4rem 2rem 4rem;
+  font-size: 3rem;
+}
+.container .nav-menu {
+  text-align: center;
+}
+.container .nav-menu button {
+  margin-right: 1rem;
+  font-weight: bold;
+  border: 2px solid rgb(238, 202, 202);
+}
+.container .food {
+  margin-top: 2.5rem;
+}
+.container .food .card {
+  border: none;
+  background-color: rgb(248, 231, 210);
+}
+.container .food .card .flex-two-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .food .card .flex-two-menu img {
+  border-radius: 7px;
+  border: 3px solid rgb(122, 60, 60);
+  height: 20vh;
+  width: 30vh;
+}
+.container .food .card .flex-two-menu .card-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(122, 60, 60);
+  padding-bottom: 5px;
+}
+.container .food .card .flex-two-menu .card-text {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=style.css.map */
