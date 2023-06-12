@@ -1,0 +1,20 @@
+.buttons .button-1 {
+  font-size: 1.4rem;
+  background-color: gold;
+  border: none;
+  width: 75px;
+}
+.buttons .button-2 {
+  font-size: 1.4rem;
+  background-color: lawngreen;
+  border: none;
+  width: 75px;
+}
+
+.pbar {
+  font-size: 1.4rem;
+  height: 30px;
+}
+.pbar .progress-bar {
+  background-color: orangered;
+}/*# sourceMappingURL=style.css.map */
