@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Project</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <video class="myvideo" src="pexels-fauxels-3253859-3840x2160-25fps.mp4" autoplay></video>
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <img src="./preloader.gif" alt="preloader" class="preloader_item" />
+    </div>
+    <header>
+      <video controls muted autoplay loop class="myvideo">
+        <source
+          src="./pexels-fauxels-3253859-3840x2160-25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <h1>Video Project</h1>
+      <button class="switch-button">
+        <span>play</span>
+        <span>pause</span>
+        <span class="switch"></span>
+      </button>
+    </header>
+    <script src="app.js"></script>
+  </body>
 </html>
