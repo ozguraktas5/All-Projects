@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: url(../img/francesco-ungaro-CL8AdJQgTcU-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    opacity: 0.9;
+}
+
+
+/* NAVBAR */
+
+header .navbar{
+    display: flex;
+    position: sticky;
+    background: transparent;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .navbar img{
+    height: 40px;
+    background: none;
+    margin-top: 1.5rem;
+}
+
+header .navbar .navbar-menu{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+header .navbar .navbar-menu li{
+    font-size: 1.2rem;
+    
+}
+
+header .navbar .navbar-menu li a{
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color:aliceblue
+}
+
+header .navbar .navbar-menu li a:hover{
+    color: bisque;
+    transition:ease-in-out 0.3s;
+}
+
+/* BANNER */
+
+header .banner .scroll-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+header .banner .scroll-project h1{
+    font-size: 4rem;
+    color: bisque;
+}
+
+header .banner .scroll-project p{
+    font-size: 1.1rem;
+    color: bisque;
+}
+
+header .banner .scroll-project a{
+    
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    padding: 4px 6px;
+    color: black;
+    
+}
+
+header .banner .scroll-project a:hover{
+    background-color: black;
+    color: aliceblue;
+    transition:ease-in 0.2s;
+}
+
+/* SECTION */
+
+.about-us{
+    background: rgb(244, 243, 243);
+    min-height: 80vh;
+    text-align: center;
+    
+}
+
+.about-us h2{
+    font-size: 2.5rem;
+}
+
+.our-services{
+    background: white;
+    min-height: 80vh;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.our-services h2{
+    font-size: 2.5rem;
+}
+
+.featured-tours{
+    background: rgb(244, 243, 243);
+    min-height: 80vh;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.featured-tours h2{
+    font-size: 2.5rem;
+}
+
+/* FOOTER */
+
+.footer{
+    background:rgb(152, 115, 115);
+    min-height: 30vh;
+    position: relative;
+}
+
+.footer p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    margin: 0;
+
+}
