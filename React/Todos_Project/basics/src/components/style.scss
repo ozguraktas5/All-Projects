@@ -1,0 +1,38 @@
+body{
+    background-color: beige;
+}
+
+
+.todo-list{
+
+    
+    h1{
+        text-align: center;
+        margin-top: 2rem;
+        color: blueviolet;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+            p{
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin: 0;
+            }
+
+            input{
+                border-radius: 10px;
+                width: 400px;
+                padding: 0.5rem 1rem;
+            }
+    }
+
+}
+
+.empty{
+    margin-top: 1rem;
+    text-align: center;
+}
