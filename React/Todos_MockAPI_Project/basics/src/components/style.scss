@@ -1,0 +1,26 @@
+body {
+  background-color: beige;
+}
+
+.todo-list {
+  text-align: center;
+  padding-top: 2rem;
+  
+  .todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    list-style: none;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    padding: 8px;
+
+    .delete-button {
+      border: none;
+      background: none;
+      color: blueviolet;
+      font-size: 1.2rem;
+    }
+  }
+}

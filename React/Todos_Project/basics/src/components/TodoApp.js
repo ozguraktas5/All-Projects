@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container } from "react-bootstrap";
 import "./style.scss";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
+
 const TodoApp = () => {
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
-
   const addTodo = () => {
     if (todo !== "") {
       setTodos([...todos, todo]);
-      setTodos("");
+      setTodo("");
     }
   };
   const deleteTodo = (text) => {
@@ -23,9 +23,7 @@ const TodoApp = () => {
   return (
     <Container className="todo-list">
       <h1>Todo List</h1>
-
       <TodoInput todo={todo} setTodo={setTodo} addTodo={addTodo} />
-
       <TodoList list={todos} remove={deleteTodo} />
     </Container>
   );

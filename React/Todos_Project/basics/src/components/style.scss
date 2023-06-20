@@ -1,38 +1,48 @@
-body{
-    background-color: beige;
+body {
+  background-color: beige;
 }
 
-
-.todo-list{
-
+.todo-list {
+  text-align: center;
+  background-color: bisque;
+  
+  .todo {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 3rem;
     
-    h1{
-        text-align: center;
-        margin-top: 2rem;
-        color: blueviolet;
+    li {
+      list-style: none;
     }
-    .input{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
+  }
 
-            p{
-                font-weight: bold;
-                font-size: 1.2rem;
-                margin: 0;
-            }
+  h1 {
+    text-align: center;
+    margin-top: 2rem;
+    color: blueviolet;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 
-            input{
-                border-radius: 10px;
-                width: 400px;
-                padding: 0.5rem 1rem;
-            }
+    p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 0;
     }
 
+    input {
+      border-radius: 10px;
+      width: 400px;
+      padding: 0.5rem 1rem;
+    }
+  }
 }
 
-.empty{
-    margin-top: 1rem;
-    text-align: center;
+.empty {
+  margin-top: 1rem;
+  text-align: center;
 }

@@ -1,5 +1,7 @@
 import React from 'react'
-
+import {faTrash} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import CheckBox from './CheckBox'
 const TodoList = ({list, remove}) => {
   return (
     <>
@@ -8,16 +10,16 @@ const TodoList = ({list, remove}) => {
                 {list.map((entry, index) => (
                     <div className='todo'>
                         <li key={index}>{entry}</li>
-
+                        <CheckBox />
                         <button className='delete-button' onClick={() => {remove(entry);}}>
-                            Delete
+                            <FontAwesomeIcon icon={faTrash} />
                         </button>
                     </div>
                 ))}
             </ul>
         ) : (
                 <div className='empty'>
-                    <p>No task found</p>
+                    <p>Empty</p>
                 </div>
             )}
     </>
