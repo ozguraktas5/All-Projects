@@ -8,15 +8,17 @@ import Notes from './Notes'
 const ToDoApp = () => {
   return (
     <Container className='mt-5'>
-      <Row>
-        <Col sm={3}>
+      <Row >
+        <Col sm={5} className='mb-5'>
           <NoteForm />
         </Col>
-        <Col sm={9}>
+        <Col sm={7}>
           <Notes />
         </Col>
       </Row>
     </Container>
+      
+    
     
   )
 }

@@ -1,8 +1,17 @@
-.button{
-    background: none;
-    border: none;
-    color: blue;
-
-    
+.button {
+  background: none;
+  border: none;
+  color: blue;
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  .chk-remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
