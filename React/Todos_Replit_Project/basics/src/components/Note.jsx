@@ -15,7 +15,7 @@ const Note = () => {
   const fetchTodos = async () => {
     try {
       const response = await axios.get(
-        "https://648be99f8620b8bae7ebe9d1.mockapi.io/api/v1/todos"
+        `https://648be99f8620b8bae7ebe9d1.mockapi.io/api/v1/todos`
       );
       setTodos(response.data);
       console.log(response)
