@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+
+body {
+  font-family: "Agdasima", sans-serif;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  
+}
+
+p {
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 0;
+  flex-wrap: wrap;
+  
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.img img {
+  max-width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.btn-text {
+  background-color: aliceblue;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  
+}
+
+.buttons {
+  border: none;
+}
+
+.button1{
+  border: none;
+  object-fit: cover;
+  width: 33%;
+  padding: 0.7rem 2rem;
+  margin: 0;
+  border-top-left-radius: 15px;
+  background-color: gray;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  
+}
+
+.button2 {
+  border: none;
+  object-fit: cover;
+  width: 33%;
+  padding: 0.7rem 2rem;
+  margin: 0;
+  background-color: gray;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.button3{
+  border: none;
+  object-fit: cover;
+  width: 33%;
+  padding: 0.7rem 2rem;
+  margin: 0;
+  border-top-right-radius: 15px;
+  background-color: gray;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.aliceblue{
+  background-color: aliceblue !important;
+}
+
+.texts{
+  padding: 2rem;
+}
+
+.texts p{
+  letter-spacing: 0;
+}
+
+.texts .text1{
+  display: none;
+}
+
+.texts .text2{
+  display: none;
+}
+
+.texts .text3{
+  display: none;
+}
+
+.active{
+  display: block !important;
+}
+
+@media screen and (max-width: 992px) {
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+}
