@@ -26,21 +26,24 @@ header .navbar .container {
 .fixed-nav {
   background: transparent;
   margin: 0;
-  
   z-index: 120;
   display: flex;
   justify-content: space-between;
   position: fixed;
   height: 90px;
-  
-  color: rgba(0, 0, 0, 0.252);
   background-color: aliceblue;
+  min-width: 1525px;
+  padding-left: 6rem;
+  padding-right: 6.5rem;
 }
+
+
 
 header img {
   height: 40px;
   background: none;
   margin-top: 1.5rem;
+  
 }
 
 header .navbar-menu {
@@ -50,6 +53,7 @@ header .navbar-menu {
   height: 100%;
   margin: 0;
   margin-top: 1.5rem;
+  
 }
 
 header .navbar-menu li {
@@ -61,7 +65,17 @@ header .navbar-menu li a {
   font-weight: bold;
   letter-spacing: 3px;
   color: aliceblue;
+  
 }
+
+.dark-text {
+  color: black !important;
+}
+
+
+
+
+
 
 header .navbar-menu li a:hover {
   color: bisque;
@@ -172,7 +186,7 @@ header .banner .scroll-project a:hover {
 }
 
 .show-link {
-  display: block;
+  display: block !important;
 }
 
 .footer .top-link i {

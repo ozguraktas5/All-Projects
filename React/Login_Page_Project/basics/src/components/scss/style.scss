@@ -14,8 +14,8 @@ body {
 .loginpage {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 3.5rem 4rem;
+  gap: 1rem;
+  padding: 4rem 4.5rem;
   position: relative;
   z-index: 1;
 }
@@ -33,23 +33,108 @@ body {
   
 }
 
+.loginpage h5{
+  margin-bottom: -10px;
+}
+
+.loginpage h4 {
+  margin-bottom: 15px;
+}
+
+.your-logo{
+  color: rgb(144, 94, 0);
+}
+
+.your-login{
+  font-weight: bold;
+}
+
 .image img {
   width: 100%;
 }
 
 .lp-label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .forgot-pass {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   text-decoration: none;
   color: black;
 }
 
 .lp-register {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: bold;
   text-decoration: none;
   color: black;
+}
+
+.lp-input{
+  font-size: 0.8rem;
+  padding: 0.7rem 0.9rem;
+}
+
+.lp-continue{
+  font-size: 0.7rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.lp-account{
+  font-size: 0.7rem;  
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.buttons{
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.buttons .lp-google{
+  border-radius: 20px !important;
+  background-color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.buttons .lp-google img{
+  width: 20px;
+}
+
+.buttons .lp-github{
+  border-radius: 20px !important;
+  background-color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.buttons .lp-github img{
+  width: 20px;
+}
+
+.buttons .lp-facebook{
+  border-radius: 20px !important;
+  background-color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.buttons .lp-facebook img{
+  width: 20px;
 }
