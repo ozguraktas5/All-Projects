@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   Container,
@@ -9,14 +9,18 @@ import {
 } from "react-bootstrap";
 import "../components/css/style.css";
 import { useFormik } from "formik";
+import { useNavigate, Link } from "react-router-dom";
 import * as yup from "yup";
-import axios from "axios";
+import Spinner from "react-bootstrap/Spinner";
 import image from "../assets/image/banner.png";
 import google from "../assets/icons/google.svg";
 import github from "../assets/icons/github.svg";
 import facebook from "../assets/icons/facebook.svg";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+
   const initialValues = {
     email: "",
     password: "",
@@ -35,33 +39,57 @@ const LoginPage = () => {
       .max(50, "Parola en fazla 50 karakterden olusmalidir!")
       .required("Parola kismini bos birakamazsiniz!")
       .matches(
-        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/,
-        "Parola en az bir büyük harf, bir kücük harf, bir sayi ve bir özel karakter icermelidir!"
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@\$!%*?&])[A-Za-z\d@$!%*?&]+$/,
+        "Şifre en az bir büyük harf, bir küçük harf, bir rakam ve bir özel karakter içermelidir."
       ),
   });
 
   const onSubmit = async (values) => {
-    const dto = {
-      email: values.email,
-      password: values.password
-    }
+    setLoading(true);
 
-    
-  }
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    setLoading(false);
+
+    if (values.email == "abc@gmail.com" && values.password === "Abcde?12345") {
+      console.log("Giris basarili");
+      navigate("/home");
+    } else {
+      formik.setFieldError("password", "Parola hatali");
+    }
+  };
+
+  const formik = useFormik({
+    initialValues: initialValues,
+    validationSchema: validationSchema,
+    onSubmit: onSubmit,
+  });
+
+  const isButtonDisabled =
+    formik.isSubmitting || (formik.touched && !formik.isValid);
+
   return (
     <Container className="container">
       <Row className="page-all">
         <Col className="loginpage" lg={4}>
           <h5 className="your-logo">Your logo</h5>
           <h4 className="your-login">Login</h4>
-          <Form>
+          <Form noValidate onSubmit={formik.handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label className="lp-label">Email address</Form.Label>
               <Form.Control
                 className="lp-input"
                 type="email"
+                name="email"
                 placeholder="username@gmail.com"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                isValid={formik.touched.email && !formik.errors.email}
+                isInvalid={formik.touched.email && formik.errors.email}
               />
+              <Form.Control.Feedback type="invalid">
+                {formik.errors.email}
+              </Form.Control.Feedback>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -69,16 +97,39 @@ const LoginPage = () => {
               <Form.Control
                 className="lp-input"
                 type="password"
+                name="password"
                 placeholder="Password"
+                {...formik.getFieldProps("password")}
+                isValid={formik.touched.password && !formik.errors.password}
+                isInvalid={formik.touched.password && formik.errors.password}
               />
-              <a className="forgot-pass" href="#">
+              <Form.Control.Feedback type="invalid">
+                {formik.errors.password}
+              </Form.Control.Feedback>
+              <Link to="/password-reset" className="forgot-pass" href="#">
                 Forgot Password?
-              </a>
+                
+              </Link>
             </Form.Group>
 
-            <Button className="w-100" variant="success" type="submit">
-              Login
+            <Button
+              disabled={isButtonDisabled}
+              className="w-100"
+              variant="success"
+              type="submit"
+            >
+              {loading ? (
+                <Spinner className="spinner" animation="border" role="status">
+                  <span className="visually-hidden">Loading...</span>
+                </Spinner>
+              ) : (
+                "Login"
+              )}
+
+            
             </Button>
+            
+
 
             <p className="lp-continue">or continue with</p>
             <ButtonGroup className="buttons">
