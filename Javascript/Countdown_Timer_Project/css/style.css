@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige !important;
+}
+
+.row.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container .oldball-img {
+  text-align: center;
+}
+
+.container .oldball-img img {
+  max-width: 300px;
+  height: auto;
+}
+
+.container .oldball-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container .oldball-text h3 {
+  color: darkcyan;
+}
+
+.container .oldball-text h5 {
+  letter-spacing: 2px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.days, .hours, .minutes, .secs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  background-color: gray;
+  color: aliceblue;
+  width: 85px;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=style.css.map */

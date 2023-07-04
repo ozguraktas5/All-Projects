@@ -8,6 +8,7 @@ import {
   ButtonGroup,
 } from "react-bootstrap";
 import "../components/css/style.css";
+import { Octokit } from "@octokit/rest";
 import { useFormik } from "formik";
 import { useNavigate, Link } from "react-router-dom";
 import * as yup from "yup";
@@ -16,6 +17,33 @@ import image from "../assets/image/banner.png";
 import google from "../assets/icons/google.svg";
 import github from "../assets/icons/github.svg";
 import facebook from "../assets/icons/facebook.svg";
+
+async function createRepoAndPush(taskId, taskName) {
+  const octokit = new Octokit({ auth: "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" });
+
+  try {
+    const repoName = `task-${taskId}-${taskName.replace(/\s+/g, "-").toLowerCase()}`;
+    const response = await octokit.repos.createForAuthenticatedUser({
+      name: repoName,
+      auto_init: true,
+    });
+
+    await octokit.git.createRef({
+      owner: response.data.owner.login,
+      repo: response.data.name,
+      ref: "refs/heads/main",
+      sha: response.data.initial_commit.sha,
+    });
+
+    console.log(`Task "${taskName}" GitHub reposu başariyla oluşturuldu ve push edildi.`);
+  } catch (error) {
+    console.error("Hata oluştu:", error);
+  }
+}
+
+const taskId = "LP-001";
+const taskName = "React JS ile Login Page Olustur";
+createRepoAndPush(taskId, taskName);
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -53,7 +81,9 @@ const LoginPage = () => {
     if (values.email == "abc@gmail.com" && values.password === "Abcde?12345") {
       console.log("Giris basarili");
       navigate("/home");
-    } else {
+    } else if (values.email !== "abc@gmail.com") {
+      formik.setFieldError("email", "Email hatali");
+    } else if (values.password !== "Abcde?12345") {
       formik.setFieldError("password", "Parola hatali");
     }
   };
@@ -108,7 +138,6 @@ const LoginPage = () => {
               </Form.Control.Feedback>
               <Link to="/password-reset" className="forgot-pass" href="#">
                 Forgot Password?
-                
               </Link>
             </Form.Group>
 
@@ -125,23 +154,31 @@ const LoginPage = () => {
               ) : (
                 "Login"
               )}
-
-            
             </Button>
-            
-
 
             <p className="lp-continue">or continue with</p>
             <ButtonGroup className="buttons">
-              <Button className="lp-google">
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                className="lp-google"
+              >
                 <img src={google} alt="google" />
-              </Button>
-              <Button className="lp-github">
+              </a>
+              <a
+                href="https://www.github.com"
+                target="_blank"
+                className="lp-github"
+              >
                 <img src={github} alt="github" />
-              </Button>
-              <Button className="lp-facebook">
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                className="lp-facebook"
+              >
                 <img src={facebook} alt="facebook" />
-              </Button>
+              </a>
             </ButtonGroup>
             <p className="lp-account">
               Don't have an account yet?
@@ -160,4 +197,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default {LoginPage, createRepoAndPush};

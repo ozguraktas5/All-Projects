@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const router = () => {
@@ -13,4 +13,4 @@ const router = () => {
   )
 }
 
-export default router
+export default router; */
