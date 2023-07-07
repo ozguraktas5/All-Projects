@@ -1,54 +1,63 @@
-import React from 'react';
-import './scss/style.scss';
-import image1 from '../assets/person-1.jpeg';
-import image2 from '../assets/person-2.jpeg';
-import image3 from '../assets/person-3.jpeg';
-import image4 from '../assets/person-4.jpeg';
-import image5 from '../assets/person-5.jpeg';
+import React, { useState } from "react";
+import "./scss/style.scss";
+
+
 
 
 const Birthday = () => {
-  return (
-    <div className='card'>
-        <h3>5 Birthdays Today</h3>
-        <div className='profile'>
-            <img src={image1} alt="person1" />
-            <div>
-                <h4>Bertie Yates</h4>
-                <p>29 years</p>
-            </div>
-        </div>
-        <div className='profile'>
-            <img src={image2} alt="person2" />
-            <div>
-                <h4>Hester Hogan</h4>
-                <p>32 years</p>
-            </div>
-        </div>
-        <div className='profile'>
-            <img src={image3} alt="person3" />
-            <div>
-                <h4>Larry Little</h4>
-                <p>36 years</p>
-            </div>
-        </div>
-        <div className='profile'>
-            <img src={image4} alt="person4" />
-            <div>
-                <h4>Sean Walsh</h4>
-                <p>34 years</p>
-            </div>
-        </div>
-        <div className='profile'>
-            <img src={image5} alt="person5" />
-            <div>
-                <h4>Lola Gardner</h4>
-                <p>29 years</p>
-            </div>
-        </div>
-        <button>Clear All</button>
-    </div>
-  )
-}
+  const [cards, setCards] = useState([
+    {
+      id: 1,
+      imageUrl: '../assets/person-1.jpeg',
+      name: "Bertie Yates",
+      age: "29",
+    },
+    {
+      id: 2,
+      imageUrl: '../assets/person-2.jpeg',
+      name: "Hester Hogan",
+      age: "32",
+    },
+    {
+      id: 3,
+      imageUrl: '../assets/person-3.jpeg',
+      name: "Larry Little",
+      age: "36",
+    },
+    {
+      id: 4,
+      imageUrl: '../assets/person-4.jpeg',
+      name: "Sean Walsh",
+      age: "34",
+    },
+    {
+      id: 5,
+      imageUrl: '../assets/person-5.jpeg',
+      name: "Lola Gardner",
+      age: "29",
+    },
+  ]);
 
-export default Birthday
+  const clearAllCards = () => {
+    setCards([]);
+  };
+
+  return (
+    <div className="card">
+      <h3>{cards.length} Birthdays Today</h3>
+      {cards.map((card) => (
+        <div className="profile" key={card.id}>
+          <img src={card.imageUrl}/>
+          <div>
+            <h4>{card.name}</h4>
+            <p>{card.age} years</p>
+          </div>
+        </div>
+      ))}
+
+      <button onClick={clearAllCards}>Clear All</button>
+    </div>
+  );
+};
+
+export default Birthday;
