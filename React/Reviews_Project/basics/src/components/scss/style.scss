@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(172, 193, 172);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+
+  .card {
+    width: 300px;
+    padding: 3rem 1rem;
+    background-color: aliceblue;
+    text-align: center;
+    .card-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .chevron-left {
+      margin-right: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .chevron-right {
+      margin-left: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .chevron-left:hover,
+    .chevron-right:hover {
+      color: rgb(105, 105, 236);
+    }
+
+    .card-button {
+      display: block;
+      left: 0;
+      margin: auto;
+      border: none;
+      border-radius: 5px;
+      padding: 0.4rem 2rem;
+      background-color: black;
+      color: aliceblue;
+      letter-spacing: 2px;
+    }
+
+    .card-button:hover {
+      background-color: brown;
+    }
+  }
+}
