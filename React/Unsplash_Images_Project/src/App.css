@@ -1,0 +1,45 @@
+.container {
+  padding: 0 8rem !important;
+  text-align: center;
+}
+
+.container .icon-button,
+.container .icon-button:checked,
+.container .icon-button:active {
+  display: block;
+  left: 0;
+  margin: auto;
+  padding: 2rem 0;
+  color: black !important;
+  background: none !important;
+  border: none !important;
+}
+
+.container .icon-button:hover {
+  background: none;
+  border: none;
+  color: blueviolet !important;
+}
+
+.container .input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.container .input-button .success-button {
+  border-radius: 0;
+  padding: 0.35rem 2rem;
+}
+
+h1 {
+  font-size: 4.5rem !important;
+  letter-spacing: 3px;
+  color: blueviolet !important;
+}
+
+input {
+  width: 40%;
+  padding: 0.3rem 0.7rem;
+}
