@@ -1,6 +1,7 @@
 .container {
   padding: 0 8rem !important;
   text-align: center;
+
 }
 
 .container .icon-button,
@@ -10,7 +11,7 @@
   left: 0;
   margin: auto;
   padding: 2rem 0;
-  color: black !important;
+  color: gold !important;
   background: none !important;
   border: none !important;
 }
@@ -18,7 +19,14 @@
 .container .icon-button:hover {
   background: none;
   border: none;
-  color: blueviolet !important;
+}
+
+.container .icon-button .light-mode {
+  font-size: 2rem;
+}
+
+.container .icon-button .dark-mode {
+  font-size: 2rem;
 }
 
 .container .input-button {
@@ -39,7 +47,15 @@ h1 {
   color: blueviolet !important;
 }
 
-input {
+.input-light {
   width: 40%;
   padding: 0.3rem 0.7rem;
+}
+
+.all-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 3rem;
+  margin-right: 1.5rem;
 }
