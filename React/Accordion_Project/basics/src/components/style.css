@@ -1,0 +1,23 @@
+body {
+    background-color: goldenrod;
+}
+
+.accordions {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.accordions .accordion {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+
+.accordions .accordion h4 {
+    
+}
