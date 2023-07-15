@@ -1,23 +1,36 @@
 body {
-    background-color: goldenrod;
+  background-color: rgb(196, 231, 215) !important;
+  /* height: 110vh; */
+  padding: 2rem;
 }
 
 .accordions {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    gap: 2rem;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2.5rem 1.5rem;
+  margin: 5rem 12rem;
+  border-radius: 1rem;
+  background-color: aliceblue;
+  box-shadow: 6px 6px 15px #888888;
 }
 
 .accordions .accordion {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    
+  width: 60%;
+  background-color: aliceblue;
+  border-radius: 8px;
+  box-shadow: 6px 6px 15px #888888;
+  padding: 8px 16px;
 }
 
-.accordions .accordion h4 {
-    
+.accordions .accordion .accordion-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+
+
+
