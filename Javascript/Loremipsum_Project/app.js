@@ -1,19 +1,15 @@
-function createParagraph() {
-    let sayi = parseInt(document.getElementById("amount").value);
+function createParagraph(event) {
+    event.preventDefault(); // butonun varsayilan davranisini iptal etmek icin
+    let amount = document.getElementById("amount").value;
+    let loremText = document.getElementById("lorem-text");
+    loremText.innerHTML = "";
 
-    if (!isNaN(sayi) && sayi > 0) {
-        let loremText = document.getElementById("lorem-text");
+    lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, repudiandae sint quia totam ducimus provident, voluptates explicabo placeat perferendis laborum harum. At sed accusantium hic explicabo labore temporibus suscipit illum!"
 
-        
-
-        for (let i = 0; i < sayi; i++) {
-            let paragraph = document.createElement("p");
-            paragraph.textContent = "Paragraf" + (i+1);
-            loremText.appendChild(paragraph);
-            console.log(loremText)
-        }
-    } else {
-        alert("Geçerli bir sayi girin")
+    for (let i=0; i < amount; i++) {
+        let paragraph = document.createElement("p");
+        paragraph.textContent = lorem;
+        loremText.appendChild(paragraph)
     }
 
  

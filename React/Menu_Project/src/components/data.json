@@ -1,0 +1,85 @@
+[
+    {
+        "id": "1",
+        "price": "10",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fresh_ayran.jpg",
+        "name": "Ayran",
+        "content": "Ayran, geleneksel olarak Orta Doğu ve Balkanlar gibi bölgelerde tüketilen fermente bir içecektir. Ayran, genellikle yoğurt, su ve tuz kullanılarak yapılır."
+    },
+    {
+        "id": "2",
+        "price": "10",
+        "image": "https://cdn.yemek.com/mncrop/940/625/uploads/2017/06/fistikli-baklava-yemekcom1.jpg",
+        "name": "Baklava",
+        "content": "Baklava, Orta Doğu ve Balkan mutfağının sevilen bir tatlısıdır. Genellikle ince katmanlar halindeki yufka üzerine fındık, ceviz veya badem gibi çeşitli iç malzemeleriyle hazırlanır. Baklava, şerbetle tatlandırılarak servis edilir ve genellikle üzerine dövülmüş fıstık serpilir."
+    },
+    {
+        "id": "3",
+        "price": "10",
+        "image": "https://www.indyturk.com/sites/default/files/styles/1368x911/public/article/main_image/2022/08/07/986641-1091800574.jpeg?itok=mSjAkXl2",
+        "name": "Çay",
+        "content": "Çay, dünya genelinde en çok tüketilen içeceklerden biridir ve birçok kültürde önemli bir yer tutar. Genellikle yapraklarından veya torbalardan demlenen çay, sıcak veya soğuk olarak tüketilebilir. "
+
+    },
+    {
+        "id": "4",
+        "price": "10",
+        "image": "https://cdn.yemek.com/mncrop/940/625/uploads/2015/03/ytk-firin-sutlac-site.jpg",
+        "name": "Fırın Sütlaç",
+        "content": "Fırın sütlaç, Türk mutfağının vazgeçilmez tatlılarından biridir. Pirinç, süt, şeker ve vanilya gibi malzemelerin birleşimiyle hazırlanan bu tatlı, fırında pişirilerek kıvamını alır. Fırın sütlaç, kremamsı ve pürüzsüz bir dokuya sahiptir ve genellikle üzeri karamelize edilerek servis edilir."
+
+    },
+    {
+        "id": "5",
+        "price": "10",
+        "image": "https://cdn.yemek.com/mnresize/1250/833/uploads/2016/09/kozalak-manti-asama-10.jpg",
+        "name": "Kozalak Mantı",
+        "content": "Kozalak mantı, Türk mutfağının benzersiz bir lezzeti olan geleneksel bir yemektir. Kozalak mantı, hamurun ince bir şekilde açılarak iç malzemesiyle doldurulması ve ardından kaynar suda haşlanmasıyla hazırlanır. Genellikle et, soğan ve baharatlarla hazırlanan iç malzemeyle doldurulan kozalak mantı, yoğun bir lezzete sahiptir ve üzerine genellikle sarımsaklı yoğurt sosu ve tereyağlı sos eşlik eder."
+
+    },
+    {
+        "id": "6",
+        "price": "10",
+        "image": "https://i4.hurimg.com/i/hurriyet/75/750x422/5ddfbe150f25441c6cc752a4.jpg",
+        "name": "Kuymak",
+        "content": "Kuymak, Karadeniz bölgesine özgü bir lezzet olan geleneksel bir yemektir. Temel olarak mısır unu, tereyağı ve lor peyniri ile hazırlanan kuymak, kremamsı bir kıvama sahiptir. Kuymak genellikle kahvaltıda veya ana yemek olarak tüketilir ve üzerine eritilmiş tereyağı gezdirilir."
+    },
+    {
+        "id": "7",
+        "price": "10",
+        "image": "https://iasbh.tmgrup.com.tr/a2e16b/821/464/31/0/730/395?u=https://isbh.tmgrup.com.tr/sbh/2021/08/26/mercimek-koftesi-tarifi-tam-olculu-mercimek-koftesi-tarifi-nasil-yapilir-1629966931776.jpg",
+        "name": "Mercimek Köfte",
+        "content": "Mercimek köfte, Türk mutfağının sevilen ve geleneksel bir lezzetidir. Mercimek, bulgur, soğan, yeşillikler ve baharatlar gibi malzemelerin bir araya gelmesiyle hazırlanan köfte, genellikle vegan veya vejetaryen alternatif olarak tercih edilen bir atıştırmalıktır. Mercimek köfte, pişirme gerektirmeyen bir tarif olduğu için çabuk ve kolay bir şekilde hazırlanabilir."
+    },
+    {
+        "id": "8",
+        "price": "10",
+        "image": "https://cdn.yemek.com/mncrop/940/625/uploads/2014/07/pancake-yemekcom.jpg",
+        "name": "Pancake",
+        "content": "Pancake, dünyanın farklı bölgelerinde sevilen bir kahvaltı veya brunch lezzetidir. Pancake hamuru, un, yumurta, süt, şeker ve kabartma tozu gibi malzemelerin karıştırılmasıyla elde edilir. Pişirme sırasında tavada kızartılan pancake'ler, altın rengi bir yüzeye ve hafif kabarık bir dokuya sahip olur. Pancake'ler genellikle bal, pekmez, meyve veya ahududu sosu gibi çeşitli tatlandırıcılarla servis edilir."
+
+    },
+    {
+        "id": "9",
+        "price": "10",
+        "image": "https://i4.hurimg.com/i/hurriyet/75/750x422/5cfe4af3c03c0e2740904345.jpg",
+        "name": "Patlıcan Kebap",
+        "content": "Patlıcan kebap, Türk mutfağının lezzetli ve popüler yemeklerinden biridir. Genellikle mangalda veya fırında pişirilen bu kebap, közlenmiş patlıcanlarla hazırlanır ve et ile birlikte servis edilir. Patlıcanlar, közlenip soyulduktan sonra et ve baharatlarla harmanlanır ve ardından pişirilir. Patlıcan kebap, yoğun bir aroma ve doyurucu bir lezzet sunar."
+    },
+    {
+        "id": "10",
+        "price": "10",
+        "image": "https://cdn.yemek.com/mncrop/940/625/uploads/2014/07/zeytinyagli-yaprak-sarmasi-yemekcom.jpg",
+        "name": "Sarma",
+        "content": "Sarma, Türk mutfağının geleneksel ve sevilen bir lezzetidir. Genellikle üzüm yaprağı veya lahana yaprağı gibi ince yapraklar kullanılarak hazırlanan sarma, iç harcı ile sarılıp pişirilir. İç harç, pirinç, kıyma, soğan, baharatlar ve bazen sebzelerden oluşabilir. Sarma, özellikle özel günlerde ve davet sofralarında sıkça tercih edilen bir yemektir."
+    },
+    {
+        "id": "11",
+        "price": "10",
+        "image": "https://i2.milimaj.com/i/milliyet/75/869x477/5ca7566e45d2a02864d931dc.jpg",
+        "name": "Su",
+        "content": "Su, hayatın temel kaynaklarından biridir ve vücut için hayati öneme sahiptir. Saf ve temiz su, sağlıklı bir yaşam sürdürmek için gereklidir. Suyun pek çok faydası vardır; vücudun hidrasyonunu sağlar, organların düzgün çalışmasına yardımcı olur, metabolizmayı destekler, toksinlerin atılmasına yardımcı olur ve cilt sağlığını korur."
+    }
+
+    
+]

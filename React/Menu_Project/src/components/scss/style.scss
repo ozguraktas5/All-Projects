@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(100, 199, 138);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  .container {
+    margin: 3rem 5rem;
+    padding: 3rem 5rem;
+    text-align: center;
+
+    h1 {
+      display: inline-block;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      color: rgb(92, 92, 235);
+      border-bottom: 4px solid rgb(92, 92, 235);
+      padding: 1rem;
+      margin: 0;
+    }
+
+    .buttons {
+      margin-top: 3rem;
+
+      > button {
+        margin: 0 1rem;
+        padding: 0.4rem 0.7rem;
+        text-align: center;
+        border: 1px solid gray;
+        background-color: rgb(92, 92, 235);
+        color: aliceblue;
+        font-size: 1.2rem;
+        border-radius: 8px;
+      }
+
+      > button:hover {
+        background-color: rgb(27, 27, 228);
+      }
+    }
+  }
+}
+
+.card {
+  margin-top: 4rem;
+  width: 300px;
+  height: 600px;
+  border: 2px solid rgb(92, 92, 235);
+  background-color: aliceblue;
+  
+  
+  
+  .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1rem 1rem;
+
+    .name-price {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+        .card-title {
+          font-size: 1.2rem;
+          font-weight: bold;
+          letter-spacing: 2px;
+        }
+
+        .card-subtitle {
+          background-color: rgb(236, 178, 69);
+          color: aliceblue;
+          border-radius: 5px;
+          padding: 0.3rem 0.8rem;
+          font-weight: bold;
+        }
+    }
+  }
+}

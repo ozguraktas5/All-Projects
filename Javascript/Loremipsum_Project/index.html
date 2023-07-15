@@ -10,11 +10,11 @@
     <div class="lorem">
         <h2 class="lorem-up">TIRED OF BORING LOREM IPSUM?</h2>
         <form class="lorem-down">
-            <h4>Paragraphs:</h4>
-            <input type="number" name="amount" id="amount">
-            <button type="submit" class="button" onclick="createParagraph()">GENERATE</button>
+            <label for="amount">Paragraphs:</label>
+            <input type="number" id="amount">
+            <button type="submit" class="button" onclick="createParagraph(event)">GENERATE</button>
         </form>
-        <article id="lorem-text"></article>
+        <article class="lorem-text" id="lorem-text"></article> 
     </div>
 
     <script src="app.js"></script>
