@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import "./scss/style.scss";
 
-const Cards = ({ id, price, image, name, content }) => {
+const Cards = ({ id, price, image, name, content, category }) => {
   return (
     <Card>
       <Card.Img variant="top" src={image} />

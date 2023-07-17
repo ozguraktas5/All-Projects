@@ -2,9 +2,10 @@ body {
   background-color: rgb(100, 199, 138);
   font-family: Georgia, "Times New Roman", Times, serif;
   box-sizing: border-box;
+  
   .container {
-    margin: 3rem 5rem;
-    padding: 3rem 5rem;
+    margin: 2rem 4rem;
+    padding: 2rem 4rem;
     text-align: center;
 
     h1 {
@@ -34,16 +35,27 @@ body {
       > button:hover {
         background-color: rgb(27, 27, 228);
       }
+
+      
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
 
 .card {
+  
   margin-top: 4rem;
   width: 300px;
-  height: 600px;
+  height: 650px;
   border: 2px solid rgb(92, 92, 235);
   background-color: aliceblue;
+  
   
   
   
