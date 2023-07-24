@@ -8,7 +8,7 @@ import {
   ButtonGroup,
 } from "react-bootstrap";
 import "../components/css/style.css";
-import { Octokit } from "@octokit/rest";
+/* import { Octokit } from "@octokit/rest"; */
 import { useFormik } from "formik";
 import { useNavigate, Link } from "react-router-dom";
 import * as yup from "yup";
@@ -18,7 +18,7 @@ import google from "../assets/icons/google.svg";
 import github from "../assets/icons/github.svg";
 import facebook from "../assets/icons/facebook.svg";
 
-async function createRepoAndPush(taskId, taskName) {
+/* async function createRepoAndPush(taskId, taskName) {
   const octokit = new Octokit({ auth: "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" });
 
   try {
@@ -43,7 +43,7 @@ async function createRepoAndPush(taskId, taskName) {
 
 const taskId = "LP-001";
 const taskName = "React JS ile Login Page Olustur";
-createRepoAndPush(taskId, taskName);
+createRepoAndPush(taskId, taskName); */
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -197,4 +197,4 @@ const LoginPage = () => {
   );
 };
 
-export default {LoginPage, createRepoAndPush};
+export default {LoginPage,/*  createRepoAndPush */};

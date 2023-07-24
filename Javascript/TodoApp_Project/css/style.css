@@ -1,7 +1,8 @@
 body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgb(242, 205, 159);
   position: relative;
-  height: 97vh;
+  height: 98vh;
   box-sizing: border-box;
 }
 
@@ -11,16 +12,17 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 2rem;
+  padding: 3rem;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 70%;
 }
 
 .input-group input {
-  width: 400px !important;
+  width: 350px !important;
   height: 2.3rem;
   border: none;
   border-radius: 1rem 0 0 1rem;
@@ -38,6 +40,12 @@ section {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 0.2rem 0.3rem;
+}
+
+.text .text-button:hover {
+  background-color: rgb(230, 230, 230);
+  
 }
 
 .text .text-button .icons button {
@@ -49,7 +57,15 @@ section {
   color: lightgreen;
 }
 
+.text .text-button .icons button .fa-pen-to-square:hover {
+  color: green;
+}
+
 .text .text-button .icons button .fa-trash {
+  color: rgb(247, 129, 129);
+}
+
+.text .text-button .icons button .fa-trash:hover {
   color: red;
 }
 
@@ -58,4 +74,22 @@ section {
   background: none;
   letter-spacing: 3px;
   color: red;
+}
+
+@media screen and (max-width: 754px) {
+  .input-group input {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .input-group input {
+    width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .input-group input {
+    width: 100px !important;
+  }
 }
